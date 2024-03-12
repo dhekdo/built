@@ -25,7 +25,7 @@ $(".back_bt").click(function(){
 
 // 홈버튼 이동
 function home() {
-    window.location.href = './main.html';
+    window.location.href = './index.html';
 }
 // 뒤로가기 버튼 이동
 function back() {

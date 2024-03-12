@@ -1,0 +1,112 @@
+html {
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "pretendard", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  overflow: hidden;
+}
+
+.all_popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -4;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.all_popup .bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+.all_popup .all_popup_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 950px;
+  background-color: #fff;
+  padding: 80px 60px;
+  border-radius: 40px;
+}
+.all_popup .all_popup_box .title_box {
+  padding: 0 20px;
+}
+.all_popup .all_popup_box .title_box .point {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #FFC500;
+  border-radius: 100%;
+}
+.all_popup .all_popup_box .title_box p {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.51px;
+  color: #000;
+  margin: 20px 0;
+}
+.all_popup .all_popup_box .title_box span {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.24px;
+}
+.all_popup .all_popup_box .text_box {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+.all_popup .all_popup_box .text_box p, .all_popup .all_popup_box .text_box span {
+  color: #070707;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.24px;
+  line-height: 2;
+}
+.all_popup .all_popup_box .text_box span {
+  font-weight: 400;
+}
+.all_popup .all_popup_box .mini_bt_gr {
+  margin-top: 80px;
+}
+.all_popup .all_popup_box .mini_bt_gr button {
+  border-radius: 41px;
+  background-color: #DCDCDC;
+  color: #000;
+  font-size: 38px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background-color: #FFD600;
+  width: 824px;
+  height: 74px;
+  font-size: 28px;
+}

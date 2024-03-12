@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'lzb0icn',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg"></div>
+        <header>
+            <nav>
+                <div>
+                    <img src="./img/nav_logo.svg" alt="상단바로고">
+                </div>
+                <div class="home_bt">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </nav>
+        </header>
+        <div class="search_bar">
+            <input type="search" placeholder="사용 기능 바로가기 검색">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="menu_title">
+            <div>
+                <p>
+                    메뉴선택
+                    <span>원하시는 기능을 선택해주세요</span>
+                </p>
+            </div>
+            <div onclick="back();">
+                <img src="./img/back_arrow.svg" alt="뒤로가기" >
+            </div>
+        </div>
+        <div class="main_menu">
+            <div onclick="location.href='sub_menu.html'">
+                <p>
+                    택배
+                    <span>해당 기기에 택배배달을 완료하시거나, 접수된 택배를 다른 목적지로 배송하세요</span>
+                </p>
+            </div>
+            <div>
+                <div onclick="location.href='card_2.html'">
+                    <p>
+                        세탁
+                        <span>세탁물을 수거하시거나<br>완료된 세탁물을 투입하세요</span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        기타 배송
+                        <span>음식 배달, 퀵배송 등의<br>배달을 완료하세요</span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div onclick="location.href='door_sel_info.html'">
+                    <p>
+                        사용 현황
+                        <span>기기 전체의 사용현황을<br>확인하세요</span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        헌옷 수거
+                        <span>기기사용자가 등록한<br>헌옷을 수거해주세요</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    
+</body>
+</html>

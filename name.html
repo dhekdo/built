@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'lzb0icn',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/name.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <div>
+                    <img src="./img/nav_logo.svg" alt="상단바로고">
+                </div>
+                <div class="home_bt_hide">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </nav>
+            <div class="sub_nav">
+                <div class="back_bt">
+                    <img src="./img/back_bt.png" alt="뒤로가기">
+                </div>
+                <div class="nav_title">
+                    <span>
+                        택배사 선택
+                    </span>
+                </div>
+                <div class="home_bt">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </div>
+        </header>
+        <div class="sub_text">
+            <span>
+                (배달기사) 소속된 택배회사를 선택하신 후 선택완료 버튼을 눌러주세요
+            </span>
+        </div>
+
+        <div class="main_contents">
+            <ul>
+                <li><img src="./img/name1.png" alt="택배사"></li>
+                <li><img src="./img/name2.png" alt="택배사"></li>
+                <li><img src="./img/name3.png" alt="택배사"></li>
+                <li><img src="./img/name4.png" alt="택배사"></li>
+                <li><img src="./img/name5.png" alt="택배사"></li>
+                <li><img src="./img/name6.png" alt="택배사"></li>
+                <li><img src="./img/name7.png" alt="택배사"></li>
+            </ul>
+            <ul>
+                <li><img src="./img/name8.png" alt="택배사"></li>
+                <li><img src="./img/name9.png" alt="택배사"></li>
+                <li><img src="./img/name10.png" alt="택배사"></li>
+                <li><img src="./img/name11.png" alt="택배사"></li>
+                <li><img src="./img/name12.png" alt="택배사"></li>
+                <li><img src="./img/name13.png" alt="택배사"></li>
+                <li><img src="./img/name14.png" alt="택배사"></li>
+            </ul>
+        </div>
+        <div class="bt_gr">
+            <button onclick="location.href='phone_number.html'">입력 완료</button>
+        </div>
+    </div>
+    
+    <script src="./js/name.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

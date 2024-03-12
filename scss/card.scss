@@ -1,0 +1,72 @@
+@import "common";
+
+.wrap {
+    height: 100%;
+    padding: 35px 67px 0;
+    
+    header {
+        width: 100%;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .home_bt_hide {
+                opacity: 0;
+            }
+        }
+
+        .sub_nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .nav_title {
+                width: 400px;
+                text-align: center;
+
+                span {
+                    font-size: 55px;
+                    font-weight: 600;
+                    letter-spacing: -0.44px;
+                }
+            }
+        }
+    }
+
+    .sub_text {
+        text-align: center;
+        margin-top: 40px;
+
+        span {
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: -0.24px;
+        }
+    }
+
+    .card_video {
+        text-align: center;
+        margin: 80px 0;
+    }
+
+    .bt_gr {
+        text-align: center;
+
+        button {
+            width: 619px;
+            height: 105px;
+            @include bt;
+            background-color: $pointColor;
+        }
+        
+        p {
+            font-size: 28px;
+            letter-spacing: -0.22px;
+            text-decoration: underline;
+            margin-top: 39px;
+        }
+    }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'lzb0icn',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./css/popup_open_tracking.css">
+    <link rel="stylesheet" href="./css/popup_open_long.css">
+    <link rel="stylesheet" href="./css/popup_open_side.css">
+    <link rel="stylesheet" href="./css/all_popup.css">
+    <link rel="stylesheet" href="./css/enter_number.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <div>
+                    <img src="./img/nav_logo.svg" alt="상단바로고">
+                </div>
+                <div class="home_bt_hide">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </nav>
+            <div class="sub_nav">
+                <div class="back_bt">
+                    <img src='./img/back_bt.png' alt='뒤로가기'></img>
+                </div>
+                <div class="nav_title">
+                    <span>
+                        인증번호 입력
+                    </span>
+                </div>
+                <div class="home_bt">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </div>
+        </header>
+        <div class="sub_text">
+            <span>
+                SMS로 받으신 인증번호를 입력하세요
+            </span>
+        </div>
+
+        <div class="main_contents">
+            <input type="text" placeholder="" id="number_code" onchange="numberCheck();">
+        </div>
+        <div class="number_wrap">
+            <ul>
+                <li>1</li>
+                <li>4</li>
+                <li>7</li>
+                <li>
+                    <img src="./img/rotate_arr.svg" alt="리셋버튼">
+                </li>
+            </ul>
+            <ul>
+                <li>2</li>
+                <li>5</li>
+                <li>8</li>
+                <li>0</li>
+            </ul>
+            <ul>
+                <li>3</li>
+                <li>6</li>
+                <li>9</li>
+                <li>
+                    <img src="./img/back_arrow_w.svg" alt="취소버튼">
+                </li>
+            </ul>
+        </div>
+        <div class="bt_gr" onclick="popupOpenLong();">
+            <button>입력 완료</button>
+        </div>
+    </div>
+
+    <!-- 긴 팝업 -->
+    <div class="popup_open_long_wrap">
+        <div class="title_box">
+            <span class="point"></span>
+            <p>송장 정보 확인</p>
+            <span class="sub_text">물품을 꺼낸 후 반드시 <b>'수거완료'</b>를 눌러주세요</span>
+        </div>
+        <div class="content_box">
+            <div class="tracking_info">
+                <div class="info_wrap">
+                    <div>
+                        <div class="info_title">
+                            <p>한진 택배 (1/2)</p>
+                            <span>010 5654 6965</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <span>발신인</span>
+                                        <p>변석진</p>        
+                                    </li>
+                                    <li class="line_wrap">
+                                        <span class="line"></span>
+                                        <span class="dot"></span>
+                                    </li>
+                                    <li>
+                                        <span>수신인</span>
+                                        <p>변석진</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>도착 일시</span>
+                                <p>2023년 03월 10일</p>
+                            </li>
+                            <li>
+                                <span>도착지 주소</span>
+                                <p>서울시 마포구 창전로 70 화수목빌딩 3층</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="img_box">
+                        <p>
+                            투입 위치<br><b>택배함</b>
+                        </p>
+                        <img src="./img/tracking_door.png" alt="빌트인박스">
+                        <div class="y_check_box">
+                            <img src="./img/y_check1.svg" alt="체크">
+                            <img src="./img/y_check2.svg" alt="체크">
+                            <img src="./img/y_check3.svg" alt="체크">
+                        </div>
+                    </div>
+                </div>
+                <div class="mini_bt_gr" onclick="popupOpen();">
+                    <button>해당 물품 수거하기 ( 문 열기 )</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="box_wrap">
+            <div onclick="popupOpenSide();">
+                <i class="fa-solid fa-arrow-rotate-left point"></i>
+                <p>수거 불가</p>
+                <span class="sub_text">수거불가이유를 고객에게 전달합니다</span>
+            </div>
+            <div onclick="home();">
+                <i class="fa-solid fa-check point"></i>
+                <p>수거 완료</p>
+                <span class="sub_text">모든 물품을 꺼낸 후 수거완료를 눌러주세요</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기본 팝업 -->
+    <div class="popup_open_wrap">
+        <div class="title_box">
+            <span class="point"></span>
+            <p>문이 열렸습니다</p>
+            <span class="sub_text">물품을 꺼내신 후 문을 닫아주세요</span>
+        </div>
+        <div class="box_wrap">
+            <div class="plus_popup">
+                <i class="fa-solid fa-plus point"></i>
+                <p>추가 수거</p>
+                <span class="sub_text">송장 번호 입력 화면으로 돌아갑니다</span>
+            </div>
+            <div onclick="popupDown();">
+                <i class="fa-solid fa-check point"></i>
+                <p>수거 완료</p>
+                <span class="sub_text">수거를 완료합니다</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 옆에서 나오는 팝업 -->
+    <div class="popup_open_side_wrap">
+        <div class="exit_bt" onclick="popupDownSide();">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="title_box">
+            <span class="point"></span>
+            <p>수거 불가 처리</p>
+            <span class="sub_text">해당 내용을 고객에게 전달하고,수거불가 처리합니다.</span>
+        </div>
+        <div class="info_wrap">
+            <div>
+                <div class="info_title">
+                    <div>
+                        <p>한진 택배 (1/2)</p>
+                        <span>010 5654 6965</span>
+                    </div>
+                    <div class="img_box">
+                        <ul>
+                            <li class="box1"></li>
+                            <li class="box2"></li>
+                            <li class="long box3"></li>
+                        </ul>
+                        <p>
+                            투입 위치<br><b>택배함</b>
+                        </p>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <span>발신인</span>
+                                <p>변석진</p>        
+                            </li>
+                            <li class="line_wrap">
+                                <span class="line"></span>
+                                <span class="dot"></span>
+                            </li>
+                            <li>
+                                <span>수신인</span>
+                                <p>변석진</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>도착 일시</span>
+                        <p>2023년 03월 10일</p>
+                    </li>
+                    <li>
+                        <span>도착지 주소</span>
+                        <p>서울시 마포구 창전로 70 화수목빌딩 3층</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="con_tracking">
+            <li><span>취급 불가 화물</span></li>
+            <li><span>고객 파손</span></li>
+            <li><span>반품 지시 부정확</span></li>
+            <li><span>기타 ( 직접입력 )</span></li>
+        </ul>
+        <div class="mini_bt_gr">
+            <button>확인</button>
+        </div>
+    </div>
+
+    <!-- 전체 팝업 -->
+    <div class="all_popup popup1">
+        <div class="bg"></div>
+        <div class="all_popup_box">
+            <div class="title_box">
+                <span class="point"></span>
+                <p>전송 실패</p>
+                <span class="sub_text">수거불가 사유 SMS 전송에 실패했습니다.</span>
+            </div>
+            <div class="text_box">
+                <p>
+                    [수거불가] - 반품지시 부정확
+                </p>
+                <span>
+                    고객번호 : 010 - 5654 - 6965<br>
+                    스마트큐브 고객센터 1661 - 5820
+                </span>
+            </div>
+            <div class="mini_bt_gr">
+                <button>확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="all_popup popup2">
+        <div class="bg"></div>
+        <div class="all_popup_box">
+            <div class="title_box">
+                <span class="point"></span>
+                <p>수거 불가</p>
+                <span class="sub_text">더 이상 택배발송된 보관함이 없습니다</span>
+            </div>
+            <!-- <div class="text_box">
+                <p>
+                    [수거불가] - 반품지시 부정확
+                </p>
+                <span>
+                    고객번호 : 010 - 5654 - 6965<br>
+                    스마트큐브 고객센터 1661 - 5820
+                </span>
+            </div> -->
+            <div class="mini_bt_gr">
+                <button>확인</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/popup.js"></script>
+    <script src="./js/tracking_number.js"></script>
+    <script src="./js/enter_number.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

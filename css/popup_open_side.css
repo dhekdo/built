@@ -1,0 +1,289 @@
+html {
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "pretendard", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  overflow: hidden;
+}
+
+.popup_open_side_wrap {
+  width: 608px;
+  height: 1240px;
+  background-color: #fff;
+  border: 3px solid rgba(255, 214, 0, 0.2509803922);
+  position: absolute;
+  bottom: 250px;
+  left: -610px;
+  border-radius: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.popup_open_side_wrap .exit_bt {
+  display: inline-block;
+  background-color: #FFC500;
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin: 20px 50px 0 0;
+}
+.popup_open_side_wrap .exit_bt i {
+  color: #000;
+  font-size: 30px;
+}
+.popup_open_side_wrap .title_box {
+  padding: 0 0 40px 80px;
+}
+.popup_open_side_wrap .title_box .point {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #FFC500;
+  border-radius: 100%;
+}
+.popup_open_side_wrap .title_box p {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  color: #000;
+  margin: 31px 0 25px;
+}
+.popup_open_side_wrap .title_box span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.popup_open_side_wrap .title_box span b {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -0.24px;
+}
+.popup_open_side_wrap .info_wrap {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  border-top: 0.5px solid #707070;
+  border-bottom: 0.5px solid #707070;
+  padding: 40px 80px;
+}
+.popup_open_side_wrap .info_wrap p {
+  color: #000;
+}
+.popup_open_side_wrap .info_wrap span {
+  color: #000;
+  line-height: 2;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+.popup_open_side_wrap .info_wrap .info_title {
+  display: flex;
+  justify-content: space-between;
+}
+.popup_open_side_wrap .info_wrap .info_title p {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.27px;
+}
+.popup_open_side_wrap .info_wrap .info_title span {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+}
+.popup_open_side_wrap .info_wrap .info_title .img_box {
+  display: flex;
+  justify-content: right;
+}
+.popup_open_side_wrap .info_wrap .info_title .img_box p {
+  font-size: 17px;
+  letter-spacing: -0.14px;
+  align-self: flex-end;
+}
+.popup_open_side_wrap .info_wrap .info_title .img_box p b {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+.popup_open_side_wrap .info_wrap .info_title .img_box ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px 0 0;
+}
+.popup_open_side_wrap .info_wrap .info_title .img_box ul li {
+  margin: 1.5px 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  border-radius: 6px;
+}
+.popup_open_side_wrap .info_wrap .info_title .img_box ul li.box2 {
+  background-color: #FFC500;
+}
+.popup_open_side_wrap .info_wrap .info_title .img_box ul li.long {
+  height: 21px;
+}
+.popup_open_side_wrap .info_wrap ul {
+  margin: 40px 0 0 0;
+}
+.popup_open_side_wrap .info_wrap ul span {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.13px;
+}
+.popup_open_side_wrap .info_wrap ul p {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+.popup_open_side_wrap .info_wrap ul li {
+  margin-top: 10px;
+}
+.popup_open_side_wrap .info_wrap ul li ul {
+  margin: 0;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.popup_open_side_wrap .info_wrap ul li ul li {
+  margin: 0;
+}
+.popup_open_side_wrap .info_wrap ul li ul li.line_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.popup_open_side_wrap .info_wrap ul li ul li.line_wrap span.line {
+  display: inline-block;
+  width: 40px;
+  border-bottom: 2px dashed #000;
+  height: 1px;
+  opacity: 0.5;
+}
+.popup_open_side_wrap .info_wrap ul li ul li.line_wrap span.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 100%;
+  opacity: 0.8;
+}
+.popup_open_side_wrap .info_wrap .img_box {
+  width: 200px;
+  position: relative;
+  text-align: center;
+}
+.popup_open_side_wrap .info_wrap .img_box p {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.14px;
+}
+.popup_open_side_wrap .info_wrap .img_box p b {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 2;
+}
+.popup_open_side_wrap .info_wrap .img_box > img {
+  margin-top: -15px;
+  margin-bottom: 30px;
+  height: 480px;
+}
+.popup_open_side_wrap .info_wrap .img_box .y_check_box {
+  position: absolute;
+  top: 94px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  width: 110px;
+}
+.popup_open_side_wrap .info_wrap .img_box .y_check_box img {
+  opacity: 0;
+}
+.popup_open_side_wrap .info_wrap .img_box .y_check_box img:nth-child(2) {
+  opacity: 1;
+}
+.popup_open_side_wrap ul.con_tracking {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+.popup_open_side_wrap ul.con_tracking li {
+  width: 470px;
+  height: 57px;
+  background-color: #32322E;
+  border-radius: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup_open_side_wrap ul.con_tracking li .point {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #FFC500;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+.popup_open_side_wrap ul.con_tracking li span {
+  font-size: 21px;
+  letter-spacing: -0.17px;
+  font-weight: 400;
+  color: #fff;
+}
+.popup_open_side_wrap .mini_bt_gr {
+  margin: 10px auto;
+}
+.popup_open_side_wrap .mini_bt_gr button {
+  border-radius: 41px;
+  background-color: #DCDCDC;
+  color: #000;
+  font-size: 38px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  width: 333px;
+  height: 105px;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}

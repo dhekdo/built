@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'lzb0icn',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/card.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <div>
+                    <img src="./img/nav_logo.svg" alt="상단바로고">
+                </div>
+                <div class="home_bt_hide">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </nav>
+            <div class="sub_nav">
+                <div class="back_bt">
+                    <img src="./img/back_bt.png" alt="뒤로가기">
+                </div>
+                <div class="nav_title">
+                    <span>
+                        RF(입주카드) 입력
+                    </span>
+                </div>
+                <div class="home_bt">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </div>
+        </header>
+        <div class="sub_text">
+            <span>
+                (배달기사) 소지하신 RF카드를 리더부분에 태그해 주세요
+            </span>
+        </div>
+
+        <div class="main_contents card_video">
+            <img src="./img/card_video.gif" alt="카드비디오">
+        </div>
+        <div class="bt_gr">
+            <button onclick="location.href='phone_number_4.html'">전화번호 입력으로 인증</button>
+            <p onclick="location.href='name.html'">초기 사용 기사 신규등록</p>
+        </div>
+    </div>
+    
+    <script src="./js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'lzb0icn',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./css/sub_menu.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg"></div>
+        <header>
+            <nav>
+                <div>
+                    <img src="./img/nav_logo.svg" alt="상단바로고">
+                </div>
+                <div class="home_bt">
+                    <img src="./img/home_off.svg" alt="홈버튼">
+                </div>
+            </nav>
+        </header>
+        <div class="search_bar">
+            <input type="search" placeholder="사용 기능 바로가기 검색">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="menu_title">
+            <div>
+                <p>
+                    메뉴선택
+                    <span>원하시는 기능을 선택해주세요</span>
+                </p>
+            </div>
+            <div onclick="back();">
+                <img src="./img/back_arrow.svg" alt="뒤로가기">
+            </div>
+        </div>
+        <div class="main_menu">
+            <div onclick="location.href='card.html'">
+                <p>
+                    배달
+                    <span>등록된 택배를 배달합니다</span>
+                </p>
+            </div>
+            <div onclick="location.href='tracking_number.html'">
+                <p>
+                    집하
+                    <span>고객이 발송등록한 택배를 수거합니다</span>
+                </p>
+            </div>
+            <div onclick="location.href='phone_number_3.html'">
+                <p>
+                    반품 수거
+                    <span>반품처리된 택배를 회수합니다</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    
+</body>
+</html>

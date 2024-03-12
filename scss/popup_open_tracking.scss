@@ -1,0 +1,76 @@
+@import "common";
+
+.popup_open_wrap{
+    width: 1080px;
+    height: 814px;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    position: absolute;
+    bottom: -800px;
+    border-radius: 100px 100px 0px 0px;
+    backdrop-filter: blur(50px);
+    filter: brightness(95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title_box {
+        width: 500px;
+        margin: 0 0 100px 172px;
+
+        .point {
+            @include dotPoint
+        }
+
+        p {
+            font-size: 64px;
+            font-weight: 600;
+            letter-spacing: -0.51px;
+            color: #000;
+            margin: 20px 0;
+        }
+
+        span {
+            font-size: 30px;
+            font-weight: 400;
+            color: #000;
+            letter-spacing: -0.24px;
+        }
+    }
+
+    .box_wrap {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 440px;
+            height: 240px;
+            background-color: rgba($color: #000000, $alpha: 0.55);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+
+            &:first-child {
+                margin-right: 40px;
+            }
+
+            .point {
+                color: $pointColor;
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 40px;
+                font-weight: 600;
+                letter-spacing: -0.32px;
+                margin: 30px 0 10px;
+            }
+
+            span {
+                font-size: 20px;
+                letter-spacing: -0.16px;
+            }
+        }
+    }
+}

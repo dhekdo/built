@@ -1,0 +1,132 @@
+html {
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "pretendard", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  overflow: hidden;
+}
+
+.wrap {
+  height: 100%;
+  padding: 35px 67px 0;
+}
+.wrap header {
+  width: 100%;
+}
+.wrap header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap header nav .home_bt_hide {
+  opacity: 0;
+}
+.wrap header .sub_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap header .sub_nav .nav_title {
+  width: 400px;
+  text-align: center;
+}
+.wrap header .sub_nav .nav_title span {
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: -0.44px;
+}
+.wrap .sub_text {
+  text-align: center;
+  margin-top: 40px;
+}
+.wrap .sub_text span {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.24px;
+}
+.wrap .main_contents {
+  text-align: center;
+  margin: 90px auto 154px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 683px;
+  height: 100px;
+  border-bottom: 3px solid #fff;
+}
+.wrap .main_contents span {
+  font-size: 67px;
+  font-weight: 500;
+}
+.wrap .main_contents input {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  font-size: 67px;
+  font-weight: 500;
+  width: 166px;
+  height: 80px;
+}
+.wrap .number_wrap {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .number_wrap ul:nth-child(2) {
+  margin: 0 170px;
+}
+.wrap .number_wrap ul li {
+  font-size: 88px;
+  font-weight: 400;
+}
+.wrap .number_wrap ul li:not(:last-child) {
+  margin-bottom: 104px;
+}
+.wrap .bt_gr {
+  text-align: center;
+  margin-top: 185px;
+}
+.wrap .bt_gr button {
+  width: 333px;
+  height: 105px;
+  border-radius: 41px;
+  background-color: #DCDCDC;
+  color: #000;
+  font-size: 38px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #6E6E6E;
+}
+.wrap .bt_gr p {
+  font-size: 28px;
+  letter-spacing: -0.22px;
+  text-decoration: underline;
+  margin-top: 39px;
+}

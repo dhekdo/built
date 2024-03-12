@@ -1,0 +1,139 @@
+@import "common";
+
+.wrap {
+    height: 100%;
+    padding: 35px 67px 0;
+    
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/built.png);
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        opacity: 0.5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+
+    header {
+        width: 100%;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .search_bar {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 135px;
+        text-align: center;
+        margin: 126px 0 196px;
+
+        input {
+            border-radius: 100px;
+            width: 940px;
+            height: 135px;
+            line-height: 135px;
+            padding: 10px 60px 0;
+            color: #000;
+            outline: none;
+            border: none;
+            font-size: 35px;
+
+            &::placeholder {
+                font-weight: 600;
+                font-size: 35px;
+                opacity: 0.5;
+                color: #000;
+            }
+        }
+
+        i {
+            display: inline-block;
+            position: absolute;
+            line-height: 135px;
+            right: 80px;
+            font-size: 50px;
+            color: $pointColor;
+        }
+        
+    }
+
+    .menu_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+
+        div {
+            &:first-child {
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    background-color: $pointColor;
+                    border-radius: 100%;
+                    margin: 0 36px 45px 0;
+                }
+                p {
+                    font-size: 64px;
+                    font-weight: 600;
+                    color: $mainFontColor;
+                    display: inline-block;
+
+                    span {
+                        display: block;
+                        font-size: 30px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            &:last-child {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    .main_menu {
+        margin-top: 89px;
+
+        >div {
+            width: 940px;
+            height: 312px;
+            backdrop-filter: blur(8px);
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-end;
+            padding: 39px;
+            
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 40px;
+                font-weight: 600;
+                
+                span {
+                    font-size: 20px;
+                    display: block;
+                    margin-top: 20px;
+                    opacity: 0.8;
+                }
+            }
+        }
+        
+    }
+}
